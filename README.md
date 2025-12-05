@@ -1,40 +1,66 @@
-Este projeto apresenta o design de uma tela de confirmação de envio de solicitações, desenvolvida para um sistema corporativo de gestão de processos jurídicos. A interface foi pensada para o contexto enterprise, priorizando clareza, segurança na tomada de decisão e experiência do usuário (UX) em ambientes administrativos com alto volume de dados.
-A tela representa o passo final do fluxo, onde o usuário recebe feedback visual de sucesso após o envio das informações ao CSC (Centro de Serviços Compartilhados) e decide a próxima ação dentro do sistema.
+This project is a corporate web system focused on the validation of legal payments, designed for internal use within a legal and financial operational environment.
+Its main goal is to standardize, validate, review, and submit legal payment requests to the CSC (Shared Services Center), ensuring data consistency, traceability, and operational security.
+The system follows a desktop-first UX approach, prioritizing clarity, usability, and error prevention when handling sensitive legal and financial information.
 
-Objetivo do Design
-Confirmar de forma clara e imediata que a solicitação foi enviada com sucesso
-Reduzir ansiedade do usuário após ações críticas
-Oferecer próximas ações de forma simples e objetiva
-Manter consistência visual com o padrão corporativo da aplicação
+Main Objectives:
+Provide a secure authentication experience
+Allow users to create and manage legal payment requests
+Ensure accurate data entry through structured forms
+Enable review and validation of cases before submission
+Support multiple cases within a single request
+Confirm successful submission with clear user feedback
 
-Decisões de UX
-Feedback visual forte com ícone de sucesso (check) centralizado
-Hierarquia clara de informações, destacando o status da ação
-Linguagem objetiva, evitando termos técnicos desnecessários
-Espaços amplos e layout limpo, reduzindo carga cognitiva
-Botão primário destacado, facilitando continuidade do fluxo
+System Features & Flow
+Authentication (Login Screen)
+Secure access using email and password
+Clean and focused layout
+Clear primary action to enter the system
+Global Header & Context Information
+Company branding
+Legal partner identification
+Banking and operational data (CNPJ, bank, agency, account, consumption number, BP)
+Provides legal and financial context throughout the process
+New Legal Payment Request
+Structured form for data entry
 
-Diretrizes de UI
-Interface construída em desktop large (1728 × 1117)
-Paleta de cores corporativa (azul institucional e amarelo de ação)
-Tipografia clean e legível, adequada para dashboards administrativos
-Componentes com espaçamento generoso e foco em acessibilidade
+Fields include:
+Month
+Process number
+Author
+Court / District (Vara / Comarca)
+Legal branch
+Product
+Payment type
+Claim (Sinistro)
+Gross amount
+Division
+Clear labels and spacing to reduce input errors
+Action to add cases to the request
+Added Cases Review
+Tabular view of all added cases
+Enables users to verify data before submission
+Ensures transparency and validation of financial information
+Submission & Confirmation
+Final submission of validated cases to the CSC
+System feedback confirming successful submission
+Clear next-step options:
+Add more cases
+Return to previous screens
+UX & Design Principles
+Desktop-first layout optimized for large screens
+High contrast for readability
+Clear visual hierarchy
+Consistent spacing and alignment
+Feedback-driven interactions to reinforce user confidence
+Focus on error prevention and data accuracy
 
-Componentes Principais
-Header institucional
-Card de confirmação de sucesso
-Ícone visual de status (check)
-Mensagem de feedback ao usuário
+Project Scope
+This repository represents the UX/UI design and functional flow of the system, covering:
 
-Call to actions:
-Adicionar mais (ação primária)
-Voltar (ação secundária)
+Login
+Legal payment data entry
+Case review
+Submission confirmation
 
-Ferramentas Utilizadas
-Figma — prototipação e design de interface
-UX Design Principles — hierarquia visual, affordance e feedback
-Design System corporativo (customizado)
-
-Resultado Esperado: Uma experiência sólida, confiável e intuitiva, adequada para usuários administrativos, reduzindo erros operacionais e aumentando a confiança na interação com o sistema.
-
+The project is intended for corporate and internal use, supporting legal and financial operational processes.
 Projeto Em evolução — design aberto para iterações e melhorias com base em testes de uso e feedback dos usuários.
